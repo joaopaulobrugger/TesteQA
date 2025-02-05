@@ -3,7 +3,7 @@ Fluxos para Cenários
  Scenario: Login bem-sucedido
     Given que o usuário está na página de login
     When ele insere um e-mail e senha válidos
-    And clica no botão de login
+    And clica no botão de login 
     Then ele deve ser autenticado com sucesso
     And um token de acesso deve ser gerado
 
