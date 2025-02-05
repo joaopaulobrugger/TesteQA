@@ -7,6 +7,10 @@ Fluxos para Cenários
     Then ele deve ser autenticado com sucesso
     And um token de acesso deve ser gerado
 
+      | email            | | senha          | 
+      | admin@admin.com  | | admin          | 
+      
+   
 1.1 Login Inválido 
   Scenario: Login com credenciais inválidas
     Given que o usuário está na página de login
@@ -14,7 +18,11 @@ Fluxos para Cenários
     And clica no botão de login
     Then uma mensagem de erro "E-mail ou senha incorretos" deve ser exibida
 
-2. Adicionar Produto ao Carrinho
+     | email            | | senha          | 
+     | joao@teste.com   | | Teste          |
+     
+      
+3. Adicionar Produto ao Carrinho
 Feature: Adicionar Produto ao Carrinho
   Scenario: Adicionar produto com sucesso
     Given que o usuário está na página de um produto
