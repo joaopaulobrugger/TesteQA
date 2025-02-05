@@ -1,4 +1,4 @@
-package testelogin;
+
 
 import java.time.Duration;
 
@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class LoginTest {
+public class Rest {
     public static void main(String[] args) {
         WebDriver driver = null;
 
