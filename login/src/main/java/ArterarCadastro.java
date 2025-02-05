@@ -36,7 +36,7 @@
              WebElement usernameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email")));
              WebElement passwordField = driver.findElement(By.id("password"));
  
-             // Preencher os campos
+             // Preencher os campos de login
              usernameField.sendKeys("admin@admin.com");
              passwordField.sendKeys("admin");
  
@@ -62,8 +62,8 @@
              wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("user-form")));
  
              // Localizar os campos de nome e e-mail
-             WebElement nameField = driver.findElement(By.id("name")); // Corrigir o id aqui
-             WebElement emailField = driver.findElement(By.id("email")); // Esse id pode ser o mesmo de login, verifique se é o campo de edição
+             WebElement nameField = driver.findElement(By.id("name")); 
+             WebElement emailField = driver.findElement(By.id("email")); 
  
              // Atualizar os valores dos campos
              nameField.clear();
