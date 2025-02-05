@@ -20,7 +20,7 @@ public class Rest {
             // Configura o WebDriver do Firefox automaticamente
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver(); // Inicia o navegador Firefox
-            driver.get("http://localhost:3000/login.html"); // Acessa a página de login
+            driver.get("http://localhost:3000/login.html"); 
 
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
